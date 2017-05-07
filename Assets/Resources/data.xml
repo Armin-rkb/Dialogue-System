@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<DialogueCollection>
+  <Dialogues>
+    
+    <Dialogue id="0" type="normal">
+      <Line destination="1" portrait="characterA" mood="neutral">Hello, this is the first test line.</Line>
+    </Dialogue>
+
+    <Dialogue id="1" type="normal">
+      <Line destination="2" portrait="characterA" mood="neutral">Wow! We made it to the second line.</Line>
+    </Dialogue>
+
+    <Dialogue id="2" type="question">
+      <Line portrait="characterA" mood="neutral">So, will you go to line 4 or line 5?.</Line>
+      <Options>
+        <Option destination="3" portrait="characterB" mood="neutral" choice="Line 4">I Choose line 4!</Option>
+        <Option destination="4" portrait="characterB" mood="neutral" choice="Line 5">I'll try line 5!</Option>
+      </Options>
+    </Dialogue>
+
+    <Dialogue id="3" type="normal">
+      <Line destination="0" portrait="characterA" mood="neutral">Nice choice! Welcome to line 4.</Line>
+    </Dialogue>
+    
+    <Dialogue id="4" type="normal">
+      <Line destination="0" portrait="characterA" mood="neutral">Line 5? Not bad, have it your way.</Line>
+    </Dialogue>
+    
+  </Dialogues>
+</DialogueCollection>
