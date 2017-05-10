@@ -1,5 +1,6 @@
 ﻿using System.Xml;
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -89,26 +90,32 @@ public class DialogueData : MonoBehaviour {
         print("---------------------------------");
     }
 
-    public void SetButtons(List<Button> buttons) {
+    public void SetButtons(List<Button> buttons, Action callback) {
         for (int i = 0; i < dialogueData[dialogueID].SelectSingleNode(Constants.Options).ChildNodes.Count; i++) {
             string buttonText = dialogueData[dialogueID].SelectSingleNode(Constants.Options).SelectNodes(Constants.Option)[i].SelectSingleNode(Constants.XmlDialogueChoice).Value;
             buttons[i].gameObject.GetComponentInChildren<Text>().text = buttonText;
 
             XmlNode buttonNode = dialogueData[dialogueID].SelectSingleNode(Constants.Options).SelectNodes(Constants.Option)[i];
-            buttons[i].onClick.AddListener(() => SetButtonDestination(buttonNode));
-            // TODO: Remove EventListener.
+            buttons[i].onClick.AddListener(() => {
+                SetButtonDestination(buttonNode);
+                callback();
+                });
         }
+
+        // After setting the buttons make sure the next line won't be a question.
+        isQuestion = false;
     }
 
     private void SetButtonDestination(XmlNode node) {
         string stringNextDialogueID = node.SelectSingleNode(Constants.XmlDialogueDestination).Value;
          
         dialogueID = int.Parse(stringNextDialogueID); ;
+        dialogueType = node.SelectSingleNode(Constants.XmlDialogueType).Value;
         dialogueLine = node.InnerText;
-        
+        dialogueName = node.SelectSingleNode(Constants.XmlDialoguePortrait).Value;
+        dialogueMood = node.SelectSingleNode(Constants.XmlDialogueMood).Value;
+
         // Lock the dialogue.
         isLocked = false;
-
-        Debug.Log("Buttons Set");
     }
 }

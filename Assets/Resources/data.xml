@@ -13,18 +13,42 @@
     <Dialogue id="2" type="question">
       <Line portrait="characterA" mood="neutral">So, will you go to line 4 or line 5?.</Line>
       <Options>
-        <Option destination="3" portrait="characterB" mood="neutral" choice="Line 4">I Choose line 4!</Option>
-        <Option destination="4" portrait="characterB" mood="neutral" choice="Line 5">I'll try line 5!</Option>
+        <Option destination="3" type="normal" portrait="characterB" mood="neutral" choice="Line 4">I Choose line 4!</Option>
+        <Option destination="4" type="normal" portrait="characterB" mood="neutral" choice="Line 5">I'll try line 5!</Option>
       </Options>
     </Dialogue>
 
     <Dialogue id="3" type="normal">
-      <Line destination="0" portrait="characterA" mood="neutral">Nice choice! Welcome to line 4.</Line>
+      <Line destination="5" portrait="characterA" mood="neutral">Nice choice! Welcome to line 4.</Line>
     </Dialogue>
     
     <Dialogue id="4" type="normal">
-      <Line destination="0" portrait="characterA" mood="neutral">Line 5? Not bad, have it your way.</Line>
+      <Line destination="6" portrait="characterA" mood="neutral">Line 5? Not bad, have it your way.</Line>
     </Dialogue>
     
+    <Dialogue id="5" type="normal">
+      <Line destination="7" portrait="characterA" mood="neutral">Aaahh, the weather is really nice these days.</Line>
+    </Dialogue>  
+    
+    <Dialogue id="6" type="normal">
+      <Line destination="7" portrait="characterA" mood="neutral">Damn, the weather is horrible these days.</Line>
+    </Dialogue>  
+      
+    <Dialogue id="7" type="question">
+      <Line portrait="characterA" mood="neutral">So, what actually are you doing here?</Line>
+      <Options>
+        <Option destination="8" type="normal" portrait="characterB" mood="neutral" choice="Adventure">I'm on an adventure!</Option>
+        <Option destination="9" type="normal" portrait="characterB" mood="neutral" choice="Nothing">Just hanging around.</Option>
+      </Options>
+    </Dialogue>
+    
+    <Dialogue id="8" type="normal">
+      <Line destination="0" portrait="characterA" mood="neutral">Thats the spirit kid!</Line>
+    </Dialogue>  
+    
+    <Dialogue id="9" type="normal">
+      <Line destination="0" portrait="characterA" mood="neutral">Oh.. Okay, thats cool I guess.</Line>
+    </Dialogue>  
+
   </Dialogues>
 </DialogueCollection>
