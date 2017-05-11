@@ -29,8 +29,6 @@ public class DialogueUI : MonoBehaviour {
     }
 
     public void AdvanceDialogue() {
-
-        dialogueText.text = dialogueData.DialogueLine;
         characterName.text = dialogueData.DialogueName;
         // Character portrait needs to get the name+mood
         characterPortraitName = characterName.text + "_" + dialogueData.DialogueMood;
@@ -45,13 +43,19 @@ public class DialogueUI : MonoBehaviour {
             }
         }
 
-        ReadDialogue();
+        StartCoroutine(ReadDialogue(0.05f));
     }
 
-    private void ReadDialogue() {
-        print(dialogueText.text.Length);
-    }
+    private IEnumerator ReadDialogue(float typeSpeed) {
+        dialogueText.text = "";
 
+        foreach (char letter in dialogueData.DialogueLine.ToCharArray()) {
+            dialogueText.text += letter;
+
+            yield return new WaitForSeconds(typeSpeed);
+        }
+    }
+    
     private void DisplayButtons(bool isDisplayed) {
         for (int i = 0; i < dialogueButtons.Count; i++) {
             dialogueButtons[i].gameObject.SetActive(isDisplayed);
