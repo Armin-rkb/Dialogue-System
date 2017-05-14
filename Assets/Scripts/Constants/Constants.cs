@@ -13,4 +13,6 @@
     public static string XmlDialoguePortrait = "@portrait";
     public static string XmlDialogueMood = "@mood";
     public static string XmlDialogueChoice = "@choice";
+
+    public static float DialogueReadSpeed = 0.03f;
 }
