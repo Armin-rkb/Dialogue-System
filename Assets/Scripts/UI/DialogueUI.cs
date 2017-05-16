@@ -8,6 +8,7 @@ public class DialogueUI : MonoBehaviour {
     [SerializeField] private DialogueData dialogueData;
 
     // UI elements
+    [SerializeField] private CanvasGroup canvasGroup;
     [SerializeField] private Text dialogueText;
     [SerializeField] private Text characterName;
     [SerializeField] private string characterPortraitName;
@@ -16,21 +17,21 @@ public class DialogueUI : MonoBehaviour {
 
     // IEnumerator
     private IEnumerator readDialogue;
+    private IEnumerator displayDialogueUI;
 
     // Bool
     private bool dialogueIsRunning = false;
+    private bool dialogueDisplayed = false;
 
     private void Start() {
         // Hiding the button on default.
         DisplayButtons(false);
-
-        // Set the IEnumerators
     }
 
     private void Update() {
         // Set the next test (Needs to be reworked)
         if (Input.GetMouseButtonDown(0)) {
-            if (!dialogueData.IsLocked && !dialogueIsRunning) {
+            if (!dialogueData.IsLocked && !dialogueIsRunning && dialogueDisplayed) {
                 // Fetching the data of the next dialogue.
                 dialogueData.GetNextDialogue();
 
@@ -39,6 +40,12 @@ public class DialogueUI : MonoBehaviour {
             } else if (dialogueIsRunning) {
                 SkipDialogue();
             }
+        }
+        if (Input.GetMouseButtonDown(1)) {
+
+            // Set the IEnumerators
+            displayDialogueUI = DisplayDialogueUI(0.05f, 0.01f);
+            StartCoroutine(displayDialogueUI);
         }
     }
 
@@ -94,12 +101,44 @@ public class DialogueUI : MonoBehaviour {
         }
     }
     
+    // Showing and hiding our buttons.
     private void DisplayButtons(bool isDisplayed) {
         for (int i = 0; i < dialogueButtons.Count; i++) {
             dialogueButtons[i].gameObject.SetActive(isDisplayed);
 
             // Removing all listeners on the buttons. 
             dialogueButtons[i].onClick.RemoveAllListeners();
+        }
+    }
+
+    // Showing and hiding the whole dialogue.
+    private IEnumerator DisplayDialogueUI(float fadeAmount, float fadeSpeed) {
+        float targetAlpha = canvasGroup.alpha == 1 ? 0 : 1;
+        canvasGroup.interactable = false;
+        dialogueDisplayed = false;
+
+        while (true) {
+            if (targetAlpha == 0) { 
+                if (canvasGroup.alpha > targetAlpha) {
+                    canvasGroup.alpha -= fadeAmount;
+
+                    if (canvasGroup.alpha <= targetAlpha) {
+                        StopCoroutine(displayDialogueUI);
+                    }
+                }
+            } else if (targetAlpha == 1) {
+                if (canvasGroup.alpha < targetAlpha) {
+                    canvasGroup.alpha += fadeAmount;
+                    
+                    if (canvasGroup.alpha >= targetAlpha) {
+                        dialogueDisplayed = true;
+                        canvasGroup.interactable = true;
+                        StopCoroutine(displayDialogueUI);
+                    }
+                }
+            }
+
+            yield return new WaitForSeconds(fadeSpeed);
         }
     }
 
