@@ -3,52 +3,112 @@
   <Dialogues>
     
     <Dialogue id="0" type="normal">
-      <Line destination="1" portrait="CharacterA" mood="neutral">Hello, this is the first test line.</Line>
+      <Line destination="1" portrait="Jotaro Kujo" mood="neutral">Ughhh...</Line>
     </Dialogue>
 
     <Dialogue id="1" type="normal">
-      <Line destination="2" portrait="CharacterA" mood="neutral">Wow! We made it to the second line.</Line>
+      <Line destination="2" portrait="Dio Brando" mood="neutral">I'm afraid this is the end for you Jotaro!</Line>
     </Dialogue>
 
-    <Dialogue id="2" type="question">
-      <Line portrait="CharacterA" mood="neutral">So, will you go to line 4 or line 5?</Line>
+    <Dialogue id="2" type="normal">
+      <Line destination="3" portrait="Dio Brando" mood="neutral">No mater how hard you try you won't be able to beat me.</Line>
+    </Dialogue>
+      
+    <Dialogue id="3" type="question">
+      <Line portrait="Jotaro Kujo" mood="neutral">*I have to find a way to beat him, but how...*</Line>
       <Options>
-        <Option destination="3" type="normal" portrait="CharacterB" mood="neutral" choice="Line 4">I Choose line 4!</Option>
-        <Option destination="4" type="normal" portrait="CharacterB" mood="neutral" choice="Line 5">I'll try line 5!</Option>
+        <Option destination="4" type="normal" portrait="Jotaro Kujo" mood="neutral" choice="Stand Power">STAR PLATINUM!</Option>
+        <Option destination="8" type="normal" portrait="Jotaro Kujo" mood="neutral" choice="Play Dead">...</Option>
       </Options>
     </Dialogue>
-
-    <Dialogue id="3" type="normal">
-      <Line destination="5" portrait="CharacterA" mood="neutral">Nice choice! Welcome to line 4.</Line>
-    </Dialogue>
     
+    <!--Bad Route -->
     <Dialogue id="4" type="normal">
-      <Line destination="6" portrait="CharacterA" mood="neutral">Line 5? Not bad, have it your way.</Line>
+      <Line destination="5" portrait="Star Platinum" mood="neutral">ORA!</Line>
     </Dialogue>
     
     <Dialogue id="5" type="normal">
-      <Line destination="7" portrait="CharacterA" mood="neutral">Aaahh, the weather is really nice these days.</Line>
-    </Dialogue>  
-    
-    <Dialogue id="6" type="normal">
-      <Line destination="7" portrait="CharacterA" mood="neutral">Damn, the weather is horrible these days.</Line>
-    </Dialogue>  
-      
-    <Dialogue id="7" type="question">
-      <Line portrait="CharacterA" mood="neutral">So, what actually are you doing here?</Line>
-      <Options>
-        <Option destination="8" type="normal" portrait="CharacterB" mood="neutral" choice="Adventure">I'm on an adventure!</Option>
-        <Option destination="9" type="normal" portrait="CharacterB" mood="neutral" choice="Nothing">Just hanging around.</Option>
-      </Options>
+      <Line destination="6" portrait="Dio Brando" mood="neutral">That won't work Jotaro!</Line>
     </Dialogue>
     
+    <Dialogue id="6" type="normal">
+      <Line destination="7" portrait="CharacterA" mood="neutral">Hit's Jotaro</Line>
+    </Dialogue>  
+    
+    <Dialogue id="7" type="normal">
+      <Line destination="0" portrait="CharacterA" mood="neutral">GAME OVER</Line>
+    </Dialogue>
+    
+    <!--Good Route -->
     <Dialogue id="8" type="normal">
-      <Line destination="0" portrait="CharacterA" mood="neutral">Thats the spirit kid!</Line>
+      <Line destination="9" portrait="Dio Brando" mood="neutral">Muda muda muahahahha!</Line>
     </Dialogue>  
     
     <Dialogue id="9" type="normal">
-      <Line destination="0" portrait="CharacterA" mood="neutral">Oh.. Okay, thats cool I guess.</Line>
+      <Line destination="10" portrait="Jotaro Kujo" mood="neutral">...</Line>
     </Dialogue>  
+      
+    <Dialogue id="10" type="normal">
+      <Line destination="11" portrait="Dio Brando" mood="neutral">Mmmhh I might have hit him too hard.</Line>
+    </Dialogue>
+      
+    <Dialogue id="11" type="normal">
+      <Line destination="12" portrait="Dio Brando" mood="neutral">I'll hit him once more too be sure he won't ever get up.</Line>
+    </Dialogue>
+    
+    <Dialogue id="12" type="normal">
+      <Line destination="13" portrait="Dio Brando" mood="neutral">I'm afraid your life ends here Jota-UGHHH</Line>
+    </Dialogue>
+    
+    <Dialogue id="13" type="normal">
+      <Line destination="14" portrait="Star Platinum" mood="neutral">ORA!</Line>
+    </Dialogue>
+    
+    <Dialogue id="14" type="normal">
+      <Line destination="15" portrait="Dio Brando" mood="neutral">AAAAAGHHHHHH</Line>
+    </Dialogue>
+      
+    <Dialogue id="15" type="question">
+      <Line portrait="Jotaro Kujo" mood="neutral">I will settle this once and for all Dio Brando!</Line>
+      <Options>
+        <Option destination="2" type="normal" portrait="Star Platinum" mood="neutral" choice="(Hit low)">ORA!</Option>
+        <Option destination="16" type="normal" portrait="Star Platinum" mood="neutral" choice="(Hit high)">ORA!</Option>
+      </Options>
+    </Dialogue>
 
+    <!--Bad Route-->
+    <Dialogue id="16" type="normal">
+      <Line destination="17" portrait="CharacterA" mood="neutral">*BLOCKS*</Line>
+    </Dialogue>
+
+    <Dialogue id="17" type="normal">
+      <Line destination="18" portrait="Jotato Kujo" mood="neutral">What!?</Line>
+    </Dialogue>
+
+    <Dialogue id="18" type="normal">
+      <Line destination="19" portrait="Dio Brando" mood="neutral">IT ENDS HERE JOTARO!</Line>
+    </Dialogue>
+
+    <Dialogue id="19" type="normal">
+      <Line destination="20" portrait="CharacterA" mood="neutral">*BLOCKS*</Line>
+    </Dialogue>
+
+    <Dialogue id="20" type="normal">
+      <Line destination="0" portrait="CharacterA" mood="neutral">*COUNTER*</Line>
+    </Dialogue>
+
+    <!--Good Route-->    
+    <Dialogue id="21" type="normal">
+      <Line destination="22" portrait="Jotaro Kujo" mood="neutral">Star Platinum!</Line>
+    </Dialogue>
+
+    <Dialogue id="22" type="normal">
+      <Line destination="23" portrait="Star Platinum" mood="neutral">ORA!</Line>
+    </Dialogue>
+  
+    <Dialogue id="23" type="normal">
+      <Line destination="0" portrait="Dio Brando" mood="neutral">UUGGGHHHHH</Line>
+    </Dialogue>
+  <!--Have to finish this part.-->
   </Dialogues>
 </DialogueCollection>

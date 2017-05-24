@@ -1,0 +1,616 @@
+fileFormatVersion: 2
+guid: 4c48c46a70eb72340b602f3fbfd440b4
+timeCreated: 1495606950
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dio_Idle_0
+    21300002: Dio_Idle_1
+    21300004: Dio_Idle_2
+    21300006: Dio_Idle_3
+    21300008: Dio_Idle_4
+    21300010: Dio_Idle_5
+    21300012: Dio_Idle_6
+    21300014: Dio_Idle_7
+    21300016: Dio_Idle_8
+    21300018: Dio_Idle_9
+    21300020: Dio_Idle_10
+    21300022: Dio_Idle_11
+    21300024: Dio_Idle_12
+    21300026: Dio_Idle_13
+    21300028: Dio_Idle_14
+    21300030: Dio_Idle_15
+    21300032: Dio_Idle_16
+    21300034: Dio_Idle_17
+    21300036: Dio_Idle_18
+    21300038: Dio_Idle_19
+    21300040: Dio_Idle_20
+    21300042: Dio_Idle_21
+    21300044: Dio_Idle_22
+    21300046: Dio_Idle_23
+    21300048: Dio_Idle_24
+    21300050: Dio_Idle_25
+    21300052: Dio_Idle_26
+    21300054: Dio_Idle_27
+    21300056: Dio_Idle_28
+    21300058: Dio_Idle_29
+    21300060: Dio_Idle_30
+    21300062: Dio_Idle_31
+    21300064: Dio_Idle_32
+    21300066: Dio_Idle_33
+    21300068: Dio_Idle_34
+    21300070: Dio_Idle_35
+    21300072: Dio_Idle_36
+    21300074: Dio_Idle_37
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dio_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 65
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 65
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 0
+        width: 65
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 0
+        width: 64
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 0
+        width: 65
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 0
+        width: 64
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 65
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 0
+        width: 69
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 0
+        width: 68
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 0
+        width: 67
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 0
+        width: 67
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_20
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_21
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_22
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_23
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_24
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_25
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 0
+        width: 63
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_26
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 0
+        width: 64
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_27
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 0
+        width: 65
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_28
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_29
+      rect:
+        serializedVersion: 2
+        x: 2020
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_30
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_31
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_32
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 0
+        width: 65
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_33
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 0
+        width: 66
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_34
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 0
+        width: 68
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_35
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 0
+        width: 67
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_36
+      rect:
+        serializedVersion: 2
+        x: 2513
+        y: 0
+        width: 65
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dio_Idle_37
+      rect:
+        serializedVersion: 2
+        x: 2584
+        y: 0
+        width: 63
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

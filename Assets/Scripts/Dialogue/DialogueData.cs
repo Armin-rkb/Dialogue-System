@@ -36,7 +36,7 @@ public class DialogueData : MonoBehaviour {
         get { return dialogueLine; }
     }
 
-    private void Start () {
+    private void Awake () {
         dialogueData = xmlLoader.LoadXMLdata();
 
         // Pick the senario for our dialogue (Needs to be reworked).

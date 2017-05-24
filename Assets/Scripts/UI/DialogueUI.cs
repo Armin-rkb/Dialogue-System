@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,6 +27,11 @@ public class DialogueUI : MonoBehaviour {
     private void Start() {
         // Hiding the button on default.
         DisplayButtons(false);
+        displayDialogueUI = DisplayDialogueUI(0.05f, 0.025f, () => {
+            dialogueData.GetNextDialogue();
+            AdvanceDialogue();
+        });
+        StartCoroutine(displayDialogueUI);
     }
 
     private void Update() {
@@ -112,7 +118,7 @@ public class DialogueUI : MonoBehaviour {
     }
 
     // Showing and hiding the whole dialogue.
-    private IEnumerator DisplayDialogueUI(float fadeAmount, float fadeSpeed) {
+    private IEnumerator DisplayDialogueUI(float fadeAmount, float fadeSpeed, Action callback = null) {
         float targetAlpha = canvasGroup.alpha == 1 ? 0 : 1;
         canvasGroup.interactable = false;
         dialogueDisplayed = false;
@@ -122,18 +128,28 @@ public class DialogueUI : MonoBehaviour {
                 if (canvasGroup.alpha > targetAlpha) {
                     canvasGroup.alpha -= fadeAmount;
 
+                    // Check if we are done fading.
                     if (canvasGroup.alpha <= targetAlpha) {
                         StopCoroutine(displayDialogueUI);
+
+                        if (callback != null) {
+                            callback();
+                        }
                     }
                 }
             } else if (targetAlpha == 1) {
                 if (canvasGroup.alpha < targetAlpha) {
                     canvasGroup.alpha += fadeAmount;
-                    
+
+                    // Check if we are done fading.
                     if (canvasGroup.alpha >= targetAlpha) {
                         dialogueDisplayed = true;
                         canvasGroup.interactable = true;
                         StopCoroutine(displayDialogueUI);
+
+                        if (callback != null) {
+                            callback();
+                        }
                     }
                 }
             }
