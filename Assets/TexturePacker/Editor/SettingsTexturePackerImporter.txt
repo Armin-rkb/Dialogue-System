@@ -1,0 +1,9 @@
+version: 2
+importPivots: 1
+tpsheetFileNames:
+- Assets/Art/JoJo's Bizarre Adventure/SpriteSheets/Jotaro Kujo/Jotaro_Idle.tpsheet
+textureFileNames:
+- Assets/Art/JoJo's Bizarre Adventure/SpriteSheets/Jotaro Kujo/Jotaro_Idle.png
+normalmapFileNames:
+- 
+enableDebugOutput: 0

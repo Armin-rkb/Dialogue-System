@@ -7,6 +7,12 @@ using UnityEngine.UI;
 
 public class DialogueData : MonoBehaviour {
 
+    /// <summary>
+    /// 1 = Jojo Vs Dio
+    /// 3 = Danganronpa
+    /// </summary>
+    [SerializeField] private int dialogueStoryNum = 0;
+
     private XmlLoader xmlLoader = new XmlLoader();
     private XmlNodeList dialogueData;
 
@@ -38,9 +44,8 @@ public class DialogueData : MonoBehaviour {
 
     private void Awake () {
         dialogueData = xmlLoader.LoadXMLdata();
-
-        // Pick the senario for our dialogue (Needs to be reworked).
-        dialogueData = dialogueData[1].FirstChild.SelectNodes(Constants.Dialogue);
+        
+        dialogueData = dialogueData[1].ChildNodes[dialogueStoryNum].SelectNodes(Constants.Dialogue);
     }
 
     public void GetNextDialogue() {

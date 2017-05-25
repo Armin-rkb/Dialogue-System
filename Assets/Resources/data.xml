@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <DialogueCollection>
-  <Dialogues>
+  
+  <!--JOJO VS DIO STORY-->
+  <JojoDialogue>
     
     <Dialogue id="0" type="normal">
       <Line destination="1" portrait="Jotaro Kujo" mood="neutral">Ughhh...</Line>
@@ -110,5 +112,138 @@
       <Line destination="0" portrait="Dio Brando" mood="neutral">UUGGGHHHHH</Line>
     </Dialogue>
   <!--Have to finish this part.-->
-  </Dialogues>
+  </JojoDialogue>
+
+  <!--DANGANRONPA STORY-->
+  <!--
+  Characters:
+    Monokuma: Judge
+    Makoto Naegi: Protaganist
+    Chihiro Fujisaki: Victim
+    Hifumi Yamada: Suspect
+    Kiyotaka Ishimaru: Support
+    Byakuya Togami: Suspect
+  -->
+  <DanganronpaDialogue>
+
+    <Dialogue id="0" type="normal">
+      <Line destination="1" portrait="Monokuma" mood="neutral">Alrigth everyone listen up!</Line>
+    </Dialogue>
+
+    <Dialogue id="1" type="normal">
+      <Line destination="2" portrait="Monokuma" mood="angry">As you all know there was an incident today.</Line>
+    </Dialogue>
+
+    <Dialogue id="2" type="normal">
+      <Line destination="3" portrait="Monokuma" mood="laughing">Someone ate Chihiro's cup of noodles ~puh puh puh!</Line>
+    </Dialogue>    
+      
+    <Dialogue id="3" type="normal">
+      <Line destination="4" portrait="Kiyotaka Ishimaru" mood="serious">This is no laughing matter!</Line>
+    </Dialogue>     
+    
+    <Dialogue id="4" type="normal">
+      <Line destination="5" portrait="Kiyotaka Ishimaru" mood="crossed">We have to find the criminal who took Chihiro's noodles!</Line>
+    </Dialogue>
+    
+    <Dialogue id="5" type="normal">
+      <Line destination="6" portrait="Kiyotaka Ishimaru" mood="happy">Now lets solve this, whoever did this please raise your hand!</Line>
+    </Dialogue>   
+    
+    <Dialogue id="6" type="normal">
+      <Line destination="7" portrait="Byakuya Togami" mood="backside">This is ridiculous, I'm leaving.</Line>
+    </Dialogue>
+    
+    <Dialogue id="7" type="normal">
+      <Line destination="8" portrait="Monokuma" mood="angry">No one is allowed to leave untill one of you finds the culprit!</Line>
+    </Dialogue>
+       
+    <Dialogue id="8" type="normal">
+      <Line destination="9" portrait="Monokuma" mood="laughing">I will decide if you picked the right one so good luck! hahahah!</Line>
+    </Dialogue>
+    
+    <Dialogue id="9" type="normal">
+      <Line destination="10" portrait="Chihiro Fujisaki" mood="crying">Please guys, it's okay. All I want is an apology.</Line>
+    </Dialogue>
+    
+    <Dialogue id="10" type="normal">
+      <Line destination="11" portrait="Byakuya Togami" mood="neutral">*sigh* Fine. We just have to pick the person who did it right?</Line>
+    </Dialogue>
+    
+    <Dialogue id="11" type="normal">
+      <Line destination="12" portrait="Byakuya Togami" mood="pointing">Alright, Yamada is the culprit.</Line>
+    </Dialogue>
+    
+    <Dialogue id="12" type="normal">
+      <Line destination="13" portrait="Hifumi Yamada" mood="shocked">WHAAAT!?!</Line>
+    </Dialogue>
+
+    <Dialogue id="13" type="normal">
+      <Line destination="14" portrait="Mondo Owada" mood="neutral">I agree, it was probably him.</Line>
+    </Dialogue>
+
+    <Dialogue id="14" type="normal">
+      <Line destination="15" portrait="Hifumi Yamada" mood="sad">I didn't do it! Why would you think that..</Line>
+    </Dialogue>
+    
+    <Dialogue id="15" type="normal">
+      <Line destination="16" portrait="Byakuya Togami" mood="neutral">...</Line>
+    </Dialogue>
+    
+    <Dialogue id="16" type="normal">
+      <Line destination="17" portrait="Mondo Owada" mood="neutral">...</Line>
+    </Dialogue>
+    
+    <Dialogue id="17" type="normal">
+      <Line destination="18" portrait="Mondo Owada" mood="thinking">Just a guess.</Line>
+    </Dialogue>
+    
+    <Dialogue id="18" type="normal">
+      <Line destination="19" portrait="Makoto Naegi" mood="serious">Stop it guys! We can't just point fingers at people without evidence.</Line>
+    </Dialogue>
+    
+    <Dialogue id="19" type="normal">
+      <Line destination="20" portrait="Hifumi Yamada" mood="proud">He's right! And besides, I'm a vegan anyway.</Line>
+    </Dialogue>
+    
+    <Dialogue id="20" type="normal">
+      <Line destination="21" portrait="Kyoko Kirigiri" mood="sad">Uhh, yeah okay...</Line>
+    </Dialogue>
+    
+    <Dialogue id="21" type="normal">
+      <Line destination="22" portrait="Hifumi Yamada" mood="proud"> I don't eat unhealty food, only HIGH quality fruits and veggies.</Line>
+    </Dialogue>
+    
+
+    <Dialogue id="3" type="question">
+      <Line portrait="Jotaro Kujo" mood="neutral">*I have to find a way to beat him, but how...*</Line>
+      <Options>
+        <Option destination="4" type="normal" portrait="Jotaro Kujo" mood="neutral" choice="Stand Power">STAR PLATINUM!</Option>
+        <Option destination="8" type="normal" portrait="Jotaro Kujo" mood="neutral" choice="Play Dead">...</Option>
+      </Options>
+    </Dialogue>
+
+    <!--Bad Route -->
+    <Dialogue id="4" type="normal">
+      <Line destination="5" portrait="Star Platinum" mood="neutral">ORA!</Line>
+    </Dialogue>
+
+    <Dialogue id="5" type="normal">
+      <Line destination="6" portrait="Dio Brando" mood="neutral">That won't work Jotaro!</Line>
+    </Dialogue>
+
+    <Dialogue id="6" type="normal">
+      <Line destination="7" portrait="CharacterA" mood="neutral">Hit's Jotaro</Line>
+    </Dialogue>
+
+    <Dialogue id="7" type="normal">
+      <Line destination="0" portrait="CharacterA" mood="neutral">GAME OVER</Line>
+    </Dialogue>
+
+    <!--Good Route -->
+    <Dialogue id="8" type="normal">
+      <Line destination="9" portrait="Dio Brando" mood="neutral">Muda muda muahahahha!</Line>
+    </Dialogue>
+    
+  </DanganronpaDialogue>
 </DialogueCollection>

@@ -13,7 +13,7 @@ public class DialogueUI : MonoBehaviour {
     [SerializeField] private Text dialogueText;
     [SerializeField] private Text characterName;
     [SerializeField] private string characterPortraitName;
-    [SerializeField] private Image characterPortrait;
+    [SerializeField] private RawImage characterPortrait;
     [SerializeField] private List<Button> dialogueButtons = new List<Button>();
 
     // IEnumerator
@@ -57,10 +57,8 @@ public class DialogueUI : MonoBehaviour {
 
     public void AdvanceDialogue() {
         characterName.text = dialogueData.DialogueName;
-        // Character portrait needs to get the name+mood
-        characterPortraitName = characterName.text + "_" + dialogueData.DialogueMood;
-        Sprite currentPortrait = (Sprite)Resources.Load("Characters/" + characterName.text + "/" + characterPortraitName, typeof(Sprite));
-        characterPortrait.sprite = currentPortrait;
+        // Load and display the image of our current speaker.
+        ShowCharacter();
 
         // Set the coroutine.
         readDialogue = ReadDialogue(Constants.DialogueReadSpeed);
@@ -115,6 +113,17 @@ public class DialogueUI : MonoBehaviour {
             // Removing all listeners on the buttons. 
             dialogueButtons[i].onClick.RemoveAllListeners();
         }
+    }
+
+    private void ShowCharacter()
+    {
+        // Character portrait needs to get the name+mood
+        characterPortraitName = characterName.text + "_" + dialogueData.DialogueMood;
+        Texture currentPortrait = (Texture)Resources.Load("Characters/" + characterName.text + "/" + characterPortraitName, typeof(Texture));
+        characterPortrait.texture = currentPortrait;
+        characterPortrait.SetNativeSize();
+        characterPortrait.canvasRenderer.SetAlpha(0);
+        characterPortrait.CrossFadeAlpha(1, 0.25f, false);
     }
 
     // Showing and hiding the whole dialogue.
