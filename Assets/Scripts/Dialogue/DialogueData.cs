@@ -8,10 +8,10 @@ using UnityEngine.UI;
 public class DialogueData : MonoBehaviour {
 
     /// <summary>
-    /// 1 = Jojo Vs Dio
-    /// 3 = Danganronpa
+    /// Story 1(unfinished):JojoDialogue
+    /// Story 2: DanganronpaDialogue
     /// </summary>
-    [SerializeField] private int dialogueStoryNum = 0;
+    [SerializeField] private string dialogueStoryName;
 
     private XmlLoader xmlLoader = new XmlLoader();
     private XmlNodeList dialogueData;
@@ -45,7 +45,7 @@ public class DialogueData : MonoBehaviour {
     private void Awake () {
         dialogueData = xmlLoader.LoadXMLdata();
         
-        dialogueData = dialogueData[1].ChildNodes[dialogueStoryNum].SelectNodes(Constants.Dialogue);
+        dialogueData = dialogueData[1].SelectSingleNode(dialogueStoryName).SelectNodes(Constants.Dialogue);
     }
 
     public void GetNextDialogue() {
@@ -96,9 +96,17 @@ public class DialogueData : MonoBehaviour {
     }
 
     public void SetButtons(List<Button> buttons, Action callback) {
-        for (int i = 0; i < dialogueData[dialogueID].SelectSingleNode(Constants.Options).ChildNodes.Count; i++) {
+        // Get the amount of options we have.
+        int choiceAmount = dialogueData[dialogueID].SelectSingleNode(Constants.Options).ChildNodes.Count;
+
+        for (int i = 0; i < choiceAmount; i++) {
+            // Set the button text
             string buttonText = dialogueData[dialogueID].SelectSingleNode(Constants.Options).SelectNodes(Constants.Option)[i].SelectSingleNode(Constants.XmlDialogueChoice).Value;
             buttons[i].gameObject.GetComponentInChildren<Text>().text = buttonText;
+
+            // Display the correct buttons.
+            buttons[i].gameObject.SetActive(true);
+
 
             XmlNode buttonNode = dialogueData[dialogueID].SelectSingleNode(Constants.Options).SelectNodes(Constants.Option)[i];
             buttons[i].onClick.AddListener(() => {

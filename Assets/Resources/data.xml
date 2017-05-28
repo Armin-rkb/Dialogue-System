@@ -122,12 +122,13 @@
     Chihiro Fujisaki: Victim
     Hifumi Yamada: Suspect
     Kiyotaka Ishimaru: Support
+    Kyoko Kirigiri: Culprit
     Byakuya Togami: Suspect
   -->
   <DanganronpaDialogue>
 
     <Dialogue id="0" type="normal">
-      <Line destination="1" portrait="Monokuma" mood="neutral">Alrigth everyone listen up!</Line>
+      <Line destination="1" portrait="Monokuma" mood="neutral">Alright everyone listen up!</Line>
     </Dialogue>
 
     <Dialogue id="1" type="normal">
@@ -214,36 +215,133 @@
       <Line destination="22" portrait="Hifumi Yamada" mood="proud"> I don't eat unhealty food, only HIGH quality fruits and veggies.</Line>
     </Dialogue>
     
-
-    <Dialogue id="3" type="question">
-      <Line portrait="Jotaro Kujo" mood="neutral">*I have to find a way to beat him, but how...*</Line>
+    <Dialogue id="22" type="normal">
+      <Line destination="23" portrait="Kyoko Kirigiri" mood="neutral">Anyway, this isn't getting us anywhere.</Line>
+    </Dialogue>
+    
+    <Dialogue id="23" type="question">
+      <Line portrait="Makoto Naegi" mood="thinking">*Kirigiri is right, I must ask questions to find leads*</Line>
       <Options>
-        <Option destination="4" type="normal" portrait="Jotaro Kujo" mood="neutral" choice="Stand Power">STAR PLATINUM!</Option>
-        <Option destination="8" type="normal" portrait="Jotaro Kujo" mood="neutral" choice="Play Dead">...</Option>
+        <Option destination="24" type="normal" portrait="Makoto Naegi" mood="serious" choice="Bluff">I know who the cuplrit is!</Option>
+        <Option destination="47" type="normal" portrait="Makoto Naegi" mood="neutral" choice="Ask Chihiro">Hey Chihiro.</Option>
+        <Option destination="38" type="normal" portrait="Makoto Naegi" mood="trustworthy" choice="Guess">This must be a setup.</Option>
       </Options>
     </Dialogue>
 
     <!--Bad Route -->
-    <Dialogue id="4" type="normal">
-      <Line destination="5" portrait="Star Platinum" mood="neutral">ORA!</Line>
+    <Dialogue id="24" type="normal">
+      <Line destination="25" portrait="Chihiro Fujisaki" mood="happy">You do?</Line>
     </Dialogue>
 
-    <Dialogue id="5" type="normal">
-      <Line destination="6" portrait="Dio Brando" mood="neutral">That won't work Jotaro!</Line>
+    <Dialogue id="25" type="normal">
+      <Line destination="26" portrait="Kyoko Kirigiri" mood="neutral">Ohh? Tell us.</Line>
     </Dialogue>
 
-    <Dialogue id="6" type="normal">
-      <Line destination="7" portrait="CharacterA" mood="neutral">Hit's Jotaro</Line>
+    <Dialogue id="26" type="normal">
+      <Line destination="27" portrait="Makoto Naegi" mood="pointing">The only one who eats a lot of instant meals is Owada.</Line>
     </Dialogue>
 
-    <Dialogue id="7" type="normal">
-      <Line destination="0" portrait="CharacterA" mood="neutral">GAME OVER</Line>
-    </Dialogue>
-
-    <!--Good Route -->
-    <Dialogue id="8" type="normal">
-      <Line destination="9" portrait="Dio Brando" mood="neutral">Muda muda muahahahha!</Line>
+    <Dialogue id="27" type="normal">
+      <Line destination="28" portrait="Mondo Owada" mood="sad">Thats right.</Line>
     </Dialogue>
     
+    <Dialogue id="28" type="normal">
+      <Line destination="29" portrait="Makoto Naegi" mood="trustworthy">He was probably hungry and found Chihiro's meal laying around.</Line>
+    </Dialogue>
+    
+    <Dialogue id="29" type="normal">
+      <Line destination="30" portrait="Byakuya Togami" mood="neutral">So, got anything to say about this Owada?</Line>
+    </Dialogue>
+    
+    <Dialogue id="30" type="normal">
+      <Line destination="31" portrait="Mondo Owada" mood="thinking">Yeah, even though I have known for eating alot of junk...</Line>
+    </Dialogue>
+    
+    <Dialogue id="31" type="normal">
+      <Line destination="32" portrait="Mondo Owada" mood="neutral">I wasn't the one that to--</Line>
+    </Dialogue>
+    
+    <Dialogue id="32" type="normal">
+      <Line destination="33" portrait="Kiyotaka Ishimaru" mood="serious">OWADA WASN'T THE ONE WHO TOOK IT!</Line>
+    </Dialogue>
+    
+    <Dialogue id="33" type="normal">
+      <Line destination="34" portrait="Makoto Naegi" mood="accused">What?!</Line>
+    </Dialogue>
+    
+    <Dialogue id="34" type="normal">
+      <Line destination="35" portrait="Kiyotaka Ishimaru" mood="neutral">I was spending the whole day with Owada. It couldn't have been him!</Line>
+    </Dialogue>
+    
+    <Dialogue id="35" type="normal">
+      <Line destination="36" portrait="Monokuma" mood="laughing">Puh puh puh!</Line>
+    </Dialogue>
+    
+    <Dialogue id="36" type="normal">
+      <Line destination="37" portrait="Monokuma" mood="neutral">Looks like you messed up!</Line>
+    </Dialogue>
+    
+    <Dialogue id="37" type="normal">
+      <Line destination="0" portrait="Monokuma" mood="happy">Time to start over!</Line>
+    </Dialogue>
+    
+    <!--Bad Route -->
+    <Dialogue id="38" type="normal">
+      <Line destination="39" portrait="Kyoko Kirigiri" mood="thinking">What do you mean?</Line>
+    </Dialogue>
+
+    <Dialogue id="39" type="normal">
+      <Line destination="40" portrait="Makoto Naegi" mood="serious">There probably isn't a cuplrit at all.</Line>
+    </Dialogue>
+
+    <Dialogue id="40" type="normal">
+      <Line destination="41" portrait="Chihiro Fujisaki" mood="neutral">But, who did it then?</Line>
+    </Dialogue>
+
+    <Dialogue id="41" type="normal">
+      <Line destination="42" portrait="Makoto Naegi" mood="trustworthy">No one, Monokuma is trying to put us against each other for his enjoyment.</Line>
+    </Dialogue>
+    
+    <Dialogue id="42" type="normal">
+      <Line destination="43" portrait="Monokuma" mood="happy">Ahh you really think so Naegi?</Line>
+    </Dialogue>
+
+    <Dialogue id="43" type="normal">
+      <Line destination="44" portrait="Monokuma" mood="neutral">Although I like playing with you guys, there is a real cuplrit.</Line>
+    </Dialogue>
+      
+    <Dialogue id="44" type="normal">
+      <Line destination="45" portrait="Monokuma" mood="laughing">And it is one of you guys ~Puh puh puh!</Line>
+    </Dialogue>
+    
+    <Dialogue id="45" type="normal">
+      <Line destination="46" portrait="Makoto Naegi" mood="accused">*Crap I messed up!*</Line>
+    </Dialogue>
+    
+    <Dialogue id="46" type="question">
+      <Line portrait="Makoto Naegi" mood="thinking">There still must be another way to find out.</Line>
+      <Options>
+        <Option destination="24" type="normal" portrait="Makoto Naegi" mood="serious" choice="Bluff">I know who the cuplrit is!</Option>
+        <Option destination="47" type="normal" portrait="Makoto Naegi" mood="neutral" choice="Ask Chihiro">Hey Chihiro.</Option>
+      </Options>
+    </Dialogue>
+    
+    <!--Good Route -->
+    <Dialogue id="47" type="normal">
+      <Line destination="48" portrait="Chihiro Fujisaki" mood="neutral">Yes Neagi?</Line>
+    </Dialogue>
+    
+    <Dialogue id="48" type="normal">
+      <Line destination="49" portrait="Makoto Naegi" mood="questionig">Could you talk a bit more about how this all began?</Line>
+    </Dialogue>
+    
+    <Dialogue id="49" type="normal">
+      <Line destination="50" portrait="Chihiro Fujisaki" mood="thinking">Mhhhh</Line>
+    </Dialogue>
+  
+    <Dialogue id="51" type="normal">
+      <Line destination="50" portrait="Chihiro Fujisaki" mood="thinking">---------</Line>
+    </Dialogue>
+
   </DanganronpaDialogue>
 </DialogueCollection>

@@ -25,10 +25,13 @@ public class DialogueUI : MonoBehaviour {
     private bool dialogueDisplayed = false;
 
     private void Start() {
-        // Hiding the button on default.
+        // Hiding all the button on default.
         DisplayButtons(false);
+        characterPortrait.canvasRenderer.SetAlpha(0);
+
         displayDialogueUI = DisplayDialogueUI(0.05f, 0.025f, () => {
             dialogueData.GetNextDialogue();
+            characterPortrait.canvasRenderer.SetAlpha(1);
             AdvanceDialogue();
         });
         StartCoroutine(displayDialogueUI);
@@ -96,7 +99,6 @@ public class DialogueUI : MonoBehaviour {
     }
 
     private void ActivateButtons() {
-        DisplayButtons(true);
         dialogueData.SetButtons(dialogueButtons, AdvanceDialogue);
 
         // Making sure the buttons will always hide when pressing on them.
