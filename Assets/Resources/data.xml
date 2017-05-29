@@ -156,7 +156,7 @@
     </Dialogue>
     
     <Dialogue id="7" type="normal">
-      <Line destination="8" portrait="Monokuma" mood="angry">No one is allowed to leave untill one of you finds the culprit!</Line>
+      <Line destination="8" portrait="Monokuma" mood="angry">No one is allowed to leave until one of you finds the culprit!</Line>
     </Dialogue>
        
     <Dialogue id="8" type="normal">
@@ -168,7 +168,7 @@
     </Dialogue>
     
     <Dialogue id="10" type="normal">
-      <Line destination="11" portrait="Byakuya Togami" mood="neutral">*sigh* Fine. We just have to pick the person who did it right?</Line>
+      <Line destination="11" portrait="Byakuya Togami" mood="neutral">*Sigh* Fine. We just have to pick the person who did it right?</Line>
     </Dialogue>
     
     <Dialogue id="11" type="normal">
@@ -223,7 +223,7 @@
       <Line portrait="Makoto Naegi" mood="thinking">*Kirigiri is right, I must ask questions to find leads*</Line>
       <Options>
         <Option destination="24" type="normal" portrait="Makoto Naegi" mood="serious" choice="Bluff">I know who the cuplrit is!</Option>
-        <Option destination="47" type="normal" portrait="Makoto Naegi" mood="neutral" choice="Ask Chihiro">Hey Chihiro.</Option>
+        <Option destination="47" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Ask Chihiro">Hey Chihiro.</Option>
         <Option destination="38" type="normal" portrait="Makoto Naegi" mood="trustworthy" choice="Guess">This must be a setup.</Option>
       </Options>
     </Dialogue>
@@ -322,7 +322,7 @@
       <Line portrait="Makoto Naegi" mood="thinking">There still must be another way to find out.</Line>
       <Options>
         <Option destination="24" type="normal" portrait="Makoto Naegi" mood="serious" choice="Bluff">I know who the cuplrit is!</Option>
-        <Option destination="47" type="normal" portrait="Makoto Naegi" mood="neutral" choice="Ask Chihiro">Hey Chihiro.</Option>
+        <Option destination="47" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Ask Chihiro">Hey Chihiro.</Option>
       </Options>
     </Dialogue>
     
@@ -332,16 +332,80 @@
     </Dialogue>
     
     <Dialogue id="48" type="normal">
-      <Line destination="49" portrait="Makoto Naegi" mood="questionig">Could you talk a bit more about how this all began?</Line>
+      <Line destination="49" portrait="Makoto Naegi" mood="questioning">Could you talk a bit more about how this all began?</Line>
     </Dialogue>
     
     <Dialogue id="49" type="normal">
       <Line destination="50" portrait="Chihiro Fujisaki" mood="thinking">Mhhhh</Line>
     </Dialogue>
   
-    <Dialogue id="51" type="normal">
-      <Line destination="50" portrait="Chihiro Fujisaki" mood="thinking">---------</Line>
+    <Dialogue id="50" type="normal">
+      <Line destination="51" portrait="Chihiro Fujisaki" mood="neutral">I was working from morning till night on my computer.</Line>
     </Dialogue>
 
+    <Dialogue id="51" type="normal">
+      <Line destination="52" portrait="Chihiro Fujisaki" mood="happy">Then I remembered I still had one cup of noodles left that I bought in the morning.</Line>
+    </Dialogue>
+    
+    <Dialogue id="52" type="normal">
+      <Line destination="53" portrait="Chihiro Fujisaki" mood="confident">I went to the kitchen to place my cup of noodles there but, then I saw Togami and Yamada eating breakfast.</Line>
+    </Dialogue>
+    
+    <Dialogue id="53" type="normal">
+      <Line destination="54" portrait="Chihiro Fujisaki" mood="neutral">After Yamada talked about his favorite meal potato chips with diet coke. I put my noodles on the kitchen table and left.</Line>
+    </Dialogue>
+    
+    <Dialogue id="54" type="normal">
+      <Line destination="55" portrait="Kyoko Kirigiri" mood="thinking">Didn't you say you only ate healthy food Yamada?</Line>
+    </Dialogue>
+    
+    <Dialogue id="55" type="normal">
+      <Line destination="56" portrait="Hifumi Yamada" mood="devastated">AHHHGGGG</Line>
+    </Dialogue>
+    
+    <Dialogue id="56" type="normal">
+      <Line destination="57" portrait="Hifumi Yamada" mood="sad">Its true, I don't really eat healthy food</Line>
+    </Dialogue>
+    
+    <Dialogue id="57" type="normal">
+      <Line destination="58" portrait="Byakuya Togami" mood="neutral">*Sigh* Pathetic.</Line>
+    </Dialogue>
+    
+    <Dialogue id="58" type="normal">
+      <Line destination="59" portrait="Makoto Naegi" mood="thinking">Alright, please move on Chihiro.</Line>
+    </Dialogue>
+    
+    <Dialogue id="59" type="normal">
+      <Line destination="60" portrait="Chihiro Fujisaki" mood="neutral">Then after working all night I started getting hungry so I went to the kitchen where I left my last cup of noodles.</Line>
+    </Dialogue>
+
+    <Dialogue id="60" type="normal">
+      <Line destination="61" portrait="Chihiro Fujisaki" mood="teary">But, when I got there is was gone.</Line>
+    </Dialogue>
+
+    <Dialogue id="61" type="normal">
+      <Line destination="62" portrait="Mondo Owada" mood="thinking">So, the only one who saw put the noodles there were Togami and Yamada.</Line>
+    </Dialogue>
+
+    <Dialogue id="62" type="normal">
+      <Line destination="63" portrait="Chihiro Fujisaki" mood="teary">Yes, thats right.</Line>
+    </Dialogue> 
+    
+    <Dialogue id="63" type="normal">
+      <Line destination="64" portrait="Kiyotaka Ishimaru" mood="serious">So it has to be one of you guys!</Line>
+    </Dialogue> 
+    
+    <Dialogue id="64" type="normal">
+      <Line destination="65" portrait="Byakuya Togami" mood="pointing">Hold it right there.</Line>
+    </Dialogue> 
+    
+    <Dialogue id="65" type="normal">
+      <Line destination="66" portrait="Byakuya Togami" mood="crossed">Before you start accusing us, I'll let you know there was another person we havent talked about yet.</Line>
+    </Dialogue> 
+    
+    <Dialogue id="66" type="normal">
+      <Line destination="67" portrait="Byakuya Togami" mood="confident">After Fujisaki left the kitchen Kirigiri went inside the kitchen.</Line>
+    </Dialogue> 
+    
   </DanganronpaDialogue>
 </DialogueCollection>
