@@ -136,7 +136,7 @@
     </Dialogue>
 
     <Dialogue id="2" type="normal">
-      <Line destination="3" portrait="Monokuma" mood="laughing">Someone ate Chihiro's cup of noodles ~puh puh puh!</Line>
+      <Line destination="3" portrait="Monokuma" mood="laughing">Someone ate Fujisaki's cup of noodles ~puh puh puh!</Line>
     </Dialogue>    
       
     <Dialogue id="3" type="normal">
@@ -144,7 +144,7 @@
     </Dialogue>     
     
     <Dialogue id="4" type="normal">
-      <Line destination="5" portrait="Kiyotaka Ishimaru" mood="crossed">We have to find the criminal who took Chihiro's noodles!</Line>
+      <Line destination="5" portrait="Kiyotaka Ishimaru" mood="crossed">We have to find the criminal who took Fujisaki's noodles!</Line>
     </Dialogue>
     
     <Dialogue id="5" type="normal">
@@ -223,7 +223,7 @@
       <Line portrait="Makoto Naegi" mood="thinking">*Kirigiri is right, I must ask questions to find leads*</Line>
       <Options>
         <Option destination="24" type="normal" portrait="Makoto Naegi" mood="serious" choice="Bluff">I know who the cuplrit is!</Option>
-        <Option destination="47" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Ask Chihiro">Hey Chihiro.</Option>
+        <Option destination="47" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Ask Fujisaki">Hey Fujisaki.</Option>
         <Option destination="38" type="normal" portrait="Makoto Naegi" mood="trustworthy" choice="Guess">This must be a setup.</Option>
       </Options>
     </Dialogue>
@@ -246,7 +246,7 @@
     </Dialogue>
     
     <Dialogue id="28" type="normal">
-      <Line destination="29" portrait="Makoto Naegi" mood="trustworthy">He was probably hungry and found Chihiro's meal laying around.</Line>
+      <Line destination="29" portrait="Makoto Naegi" mood="trustworthy">He was probably hungry and found Fujisaki's meal laying around.</Line>
     </Dialogue>
     
     <Dialogue id="29" type="normal">
@@ -322,7 +322,7 @@
       <Line portrait="Makoto Naegi" mood="thinking">There still must be another way to find out.</Line>
       <Options>
         <Option destination="24" type="normal" portrait="Makoto Naegi" mood="serious" choice="Bluff">I know who the cuplrit is!</Option>
-        <Option destination="47" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Ask Chihiro">Hey Chihiro.</Option>
+        <Option destination="47" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Ask Fujisaki">Hey Fujisaki.</Option>
       </Options>
     </Dialogue>
     
@@ -372,7 +372,7 @@
     </Dialogue>
     
     <Dialogue id="58" type="normal">
-      <Line destination="59" portrait="Makoto Naegi" mood="thinking">Alright, please move on Chihiro.</Line>
+      <Line destination="59" portrait="Makoto Naegi" mood="thinking">Alright, please move on Fujisaki.</Line>
     </Dialogue>
     
     <Dialogue id="59" type="normal">
@@ -405,6 +405,81 @@
     
     <Dialogue id="66" type="normal">
       <Line destination="67" portrait="Byakuya Togami" mood="confident">After Fujisaki left the kitchen Kirigiri went inside the kitchen.</Line>
+    </Dialogue> 
+    
+    <Dialogue id="67" type="normal">
+      <Line destination="68" portrait="Byakuya Togami" mood="crossed">Isn't that right Kirigiri?</Line>
+    </Dialogue> 
+
+    <Dialogue id="68" type="normal">
+      <Line destination="69" portrait="Hifumi Yamada" mood="Shocked">Ah! I remember!</Line>
+    </Dialogue> 
+
+    <Dialogue id="69" type="normal">
+      <Line destination="70" portrait="Kyoko Kirigiri" mood="neutral">Yes, thats correct.</Line>
+    </Dialogue> 
+  
+    <Dialogue id="70" type="question">
+      <Line portrait="Makoto Naegi" mood="thinking">*Hhhmm these 3 seem most likely to be the cuplrit. Who should question?*</Line>
+      <Options>
+        <Option destination="71" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Yamada">Yamada, what where you doing after Fujisaki left?</Option>
+        <Option destination="0" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Kirigiri">Kirigi, what where you doing after Fujisaki left?</Option>
+        <Option destination="0" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Togami">Togami, what where you doing after Fujisaki left?</Option>
+      </Options>
+    </Dialogue> 
+    
+   <!--YAMADA QUESTIONING-->
+    <Dialogue id="71" type="normal">
+      <Line destination="72" portrait="Hifumi Yamada" mood="sad">*Sigh* Now ever Naegi doesn't believe me anymore...</Line>
+    </Dialogue> 
+
+    <Dialogue id="72" type="normal">
+      <Line destination="73" portrait="Mondo Owada" mood="neutral">Stop your sobbing and get to point already.</Line>
+    </Dialogue> 
+
+    <Dialogue id="73" type="normal">
+      <Line destination="74" portrait="Hifumi Yamada" mood="sad">Alright alright...</Line>
+    </Dialogue>
+  
+    <Dialogue id="74" type="normal">
+      <Line destination="75" portrait="Hifumi Yamada" mood="neutral">After Fujisaki left I went back to my room and drew on my tablet the whole day.</Line>
+    </Dialogue> 
+    
+    <Dialogue id="75" type="normal">
+      <Line destination="76" portrait="Makoto Naegi" mood="questioning">Is that all?</Line>
+    </Dialogue> 
+  
+    <Dialogue id="76" type="normal">
+      <Line destination="77" portrait="Hifumi Yamada" mood="proud">Well every now and then I went to the kitchen for some snacks.</Line>
+    </Dialogue> 
+  
+    <Dialogue id="77" type="normal">
+      <Line destination="78" portrait="Hifumi Yamada" mood="sad">But I didn't eat the noodles form Fujisaki I swear it!</Line>
+    </Dialogue> 
+  
+    <Dialogue id="78" type="normal">
+      <Line destination="79" portrait="Kyoko Kirigiri" mood="thinking">So, what did you eat then?</Line>
+    </Dialogue> 
+  
+    <Dialogue id="79" type="normal">
+      <Line destination="80" portrait="Hifumi Yamada" mood="proud">Just potato chi-UGHHH I mean healthy snack! Like carrots and cherry tomato's.</Line>
+    </Dialogue> 
+  
+    <Dialogue id="80" type="normal">
+      <Line destination="81" portrait="Kyoko Kirigiri" mood="neutral">Right...</Line>
+    </Dialogue> 
+  
+    <Dialogue id="81" type="normal">
+      <Line destination="82" portrait="Chihiro Fujisaki" mood="proud">What do you think Naegi?</Line>
+    </Dialogue> 
+  
+    <Dialogue id="82" type="question">
+      <Line portrait="Makoto Naegi" mood="thinking">*Hhhhmmm*</Line>
+      <Options>
+        <Option destination="71" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Yamada">Yamada, what where you doing after Fujisaki left?</Option>
+        <Option destination="0" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Kirigiri">Kirigi, what where you doing after Fujisaki left?</Option>
+        <Option destination="0" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Togami">Togami, what where you doing after Fujisaki left?</Option>
+      </Options>
     </Dialogue> 
     
   </DanganronpaDialogue>
