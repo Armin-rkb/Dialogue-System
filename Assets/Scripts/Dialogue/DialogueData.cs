@@ -95,7 +95,7 @@ public class DialogueData : MonoBehaviour {
         print("---------------------------------");
     }
 
-    public void SetButtons(List<Button> buttons, Action callback) {
+    public List<Button> SetButtons(List<Button> buttons, Action callback) {
         // Get the amount of options we have.
         int choiceAmount = dialogueData[dialogueID].SelectSingleNode(Constants.Options).ChildNodes.Count;
 
@@ -117,6 +117,8 @@ public class DialogueData : MonoBehaviour {
 
         // After setting the buttons make sure the next line won't be a question.
         isQuestion = false;
+
+        return buttons;
     }
 
     private void SetButtonDestination(XmlNode node) {

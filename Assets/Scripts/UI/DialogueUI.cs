@@ -12,9 +12,10 @@ public class DialogueUI : MonoBehaviour {
     [SerializeField] private CanvasGroup canvasGroup;
     [SerializeField] private Text dialogueText;
     [SerializeField] private Text characterName;
+    [SerializeField] private ButtonUI buttonUI;
+    [SerializeField] private Image skipButton;
     [SerializeField] private string characterPortraitName;
     [SerializeField] private RawImage characterPortrait;
-    [SerializeField] private List<Button> dialogueButtons = new List<Button>();
 
     // IEnumerator
     private IEnumerator readDialogue;
@@ -26,9 +27,10 @@ public class DialogueUI : MonoBehaviour {
 
     private void Start() {
         // Hiding all the button on default.
-        DisplayButtons(false);
+        buttonUI.DisplayButtons(false);
         characterPortrait.canvasRenderer.SetAlpha(0);
 
+        // Show to first dialogue line.
         displayDialogueUI = DisplayDialogueUI(0.05f, 0.025f, () => {
             dialogueData.GetNextDialogue();
             characterPortrait.canvasRenderer.SetAlpha(1);
@@ -38,7 +40,7 @@ public class DialogueUI : MonoBehaviour {
     }
 
     private void Update() {
-        // Set the next test (Needs to be reworked)
+        // Set the next dialogue
         if (Input.GetMouseButtonDown(0)) {
             if (!dialogueData.IsLocked && !dialogueIsRunning && dialogueDisplayed) {
                 // Fetching the data of the next dialogue.
@@ -49,12 +51,6 @@ public class DialogueUI : MonoBehaviour {
             } else if (dialogueIsRunning) {
                 SkipDialogue();
             }
-        }
-        if (Input.GetMouseButtonDown(1)) {
-
-            // Set the IEnumerators
-            displayDialogueUI = DisplayDialogueUI(0.05f, 0.01f);
-            StartCoroutine(displayDialogueUI);
         }
     }
 
@@ -69,6 +65,7 @@ public class DialogueUI : MonoBehaviour {
     }
 
     private IEnumerator ReadDialogue(float typeSpeed) {
+        skipButton.enabled = false;
         dialogueText.text = "";
         dialogueIsRunning = true;
 
@@ -77,10 +74,13 @@ public class DialogueUI : MonoBehaviour {
 
             yield return new WaitForSeconds(typeSpeed);
         }
+        skipButton.enabled = true;
 
         // Check if we need to display options buttons.
         if (dialogueData.IsQuestion) {
-            ActivateButtons();
+            skipButton.enabled = false;
+            buttonUI.DialogueButtons = dialogueData.SetButtons(buttonUI.DialogueButtons, AdvanceDialogue);
+            buttonUI.HideOnClick();
         }
 
         dialogueIsRunning = false;
@@ -91,29 +91,12 @@ public class DialogueUI : MonoBehaviour {
         StopCoroutine(readDialogue);
         dialogueText.text = dialogueData.DialogueLine;
         dialogueIsRunning = false;
-        
+        skipButton.enabled = true;
+
         // Check if we need to display options buttons.
         if (dialogueData.IsQuestion) {
-            ActivateButtons();
-        }
-    }
-
-    private void ActivateButtons() {
-        dialogueData.SetButtons(dialogueButtons, AdvanceDialogue);
-
-        // Making sure the buttons will always hide when pressing on them.
-        for (int i = 0; i < dialogueButtons.Count; i++) {
-            dialogueButtons[i].onClick.AddListener(() => DisplayButtons(false));
-        }
-    }
-    
-    // Showing and hiding our buttons.
-    private void DisplayButtons(bool isDisplayed) {
-        for (int i = 0; i < dialogueButtons.Count; i++) {
-            dialogueButtons[i].gameObject.SetActive(isDisplayed);
-
-            // Removing all listeners on the buttons. 
-            dialogueButtons[i].onClick.RemoveAllListeners();
+            buttonUI.DialogueButtons = dialogueData.SetButtons(buttonUI.DialogueButtons, AdvanceDialogue);
+            buttonUI.HideOnClick();
         }
     }
 

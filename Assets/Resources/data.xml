@@ -420,7 +420,7 @@
     </Dialogue> 
   
     <Dialogue id="70" type="question">
-      <Line portrait="Makoto Naegi" mood="thinking">*Hhhmm these 3 seem most likely to be the cuplrit. Who should question?*</Line>
+      <Line portrait="Makoto Naegi" mood="thinking">*These 3 seem most likely to be the cuplrit. Who should question?*</Line>
       <Options>
         <Option destination="71" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Yamada">Yamada, what where you doing after Fujisaki left?</Option>
         <Option destination="0" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Kirigiri">Kirigi, what where you doing after Fujisaki left?</Option>
