@@ -53,46 +53,33 @@ public class DialogueData : MonoBehaviour {
         // Getting our dialogueID and parsing it to an int value. 
         string stringDialogueID = dialogueData[dialogueID].SelectSingleNode(Constants.XmlDialogueID).Value;
         dialogueID = int.Parse(stringDialogueID);
-        print("DialogueID: " + dialogueID);
 
         // Getting our dialogueType 
         string stringDialogueType = dialogueData[dialogueID].SelectSingleNode(Constants.XmlDialogueType).Value;
         dialogueType = stringDialogueType;
-        print("Type: " + dialogueType);
 
         // Getting the portrait of the character 
         string stringDialoguePortrait = dialogueData[dialogueID].SelectSingleNode(Constants.Line).SelectSingleNode(Constants.XmlDialoguePortrait).Value;
         dialogueName = stringDialoguePortrait;
-        print("Character: " + dialogueName);
 
         // Getting the portrait of the character 
         string stringDialogueMood = dialogueData[dialogueID].SelectSingleNode(Constants.Line).SelectSingleNode(Constants.XmlDialogueMood).Value;
         dialogueMood = stringDialogueMood;
-        print("Mood: " + dialogueMood);
 
         // Getting the next dialogueID if its not a question and parsing it to an int value. 
         if (dialogueType == Constants.Normal) { 
             string stringDestinationID = dialogueData[dialogueID].FirstChild.SelectSingleNode(Constants.XmlDialogueDestination).Value;
             destinationID = int.Parse(stringDestinationID);
-            print("DestinationID: " + destinationID);
             isQuestion = false;
         } else if (dialogueType == Constants.Question) {
-            for (int i = 0; i < dialogueData[dialogueID].SelectSingleNode(Constants.Options).ChildNodes.Count; i++) {
-                print("Option: " + dialogueData[dialogueID].SelectSingleNode(Constants.Options).SelectNodes(Constants.Option)[i].InnerText);
-                print("Choice: " + dialogueData[dialogueID].SelectSingleNode(Constants.Options).SelectNodes(Constants.Option)[i].SelectSingleNode(Constants.XmlDialogueChoice).Value);
-            }
             isQuestion = true;
             isLocked = true;
         }
 
         // Setting the dialogue line.
         dialogueLine = dialogueData[dialogueID].SelectSingleNode(Constants.Line).InnerText;
-        
-        print(dialogueLine);
 
         dialogueID = destinationID;
-
-        print("---------------------------------");
     }
 
     public List<Button> SetButtons(List<Button> buttons, Action callback) {

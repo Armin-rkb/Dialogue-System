@@ -418,69 +418,35 @@
     <Dialogue id="69" type="normal">
       <Line destination="70" portrait="Kyoko Kirigiri" mood="neutral">Yes, thats correct.</Line>
     </Dialogue> 
-  
+    
     <Dialogue id="70" type="question">
       <Line portrait="Makoto Naegi" mood="thinking">*These 3 seem most likely to be the cuplrit. Who should question?*</Line>
       <Options>
-        <Option destination="71" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Yamada">Yamada, what where you doing after Fujisaki left?</Option>
-        <Option destination="0" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Kirigiri">Kirigi, what where you doing after Fujisaki left?</Option>
-        <Option destination="0" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Togami">Togami, what where you doing after Fujisaki left?</Option>
+        <Option destination="71" type="normal" portrait="Monokuma" mood="happy" choice="End">Hello there!</Option>
+        <Option destination="71" type="normal" portrait="Monokuma" mood="happy" choice="The">Hello there!</Option>
+        <Option destination="71" type="normal" portrait="Monokuma" mood="happy" choice="Demo">Hello there!</Option>
       </Options>
     </Dialogue> 
     
-   <!--YAMADA QUESTIONING-->
+    <!--END DEMO-->
     <Dialogue id="71" type="normal">
-      <Line destination="72" portrait="Hifumi Yamada" mood="sad">*Sigh* Now ever Naegi doesn't believe me anymore...</Line>
-    </Dialogue> 
+      <Line destination="72" portrait="Monokuma" mood="sad">I'm afraid this is the end of the demo.</Line>
+    </Dialogue>
 
     <Dialogue id="72" type="normal">
-      <Line destination="73" portrait="Mondo Owada" mood="neutral">Stop your sobbing and get to point already.</Line>
-    </Dialogue> 
-
-    <Dialogue id="73" type="normal">
-      <Line destination="74" portrait="Hifumi Yamada" mood="sad">Alright alright...</Line>
+      <Line destination="73" portrait="Monokuma" mood="neutral">I hope you enjoyed this small project!</Line>
     </Dialogue>
-  
+    
+    <Dialogue id="73" type="normal">
+      <Line destination="74" portrait="Monokuma" mood="happy">If you would like to get in contact with me please visit my website www.Armin-rkb.com</Line>
+    </Dialogue>
+
     <Dialogue id="74" type="normal">
-      <Line destination="75" portrait="Hifumi Yamada" mood="neutral">After Fujisaki left I went back to my room and drew on my tablet the whole day.</Line>
-    </Dialogue> 
+      <Line destination="75" portrait="Monokuma" mood="neutral">If you want to replay the demo you can continue clicking.</Line>
+    </Dialogue>
     
     <Dialogue id="75" type="normal">
-      <Line destination="76" portrait="Makoto Naegi" mood="questioning">Is that all?</Line>
-    </Dialogue> 
-  
-    <Dialogue id="76" type="normal">
-      <Line destination="77" portrait="Hifumi Yamada" mood="proud">Well every now and then I went to the kitchen for some snacks.</Line>
-    </Dialogue> 
-  
-    <Dialogue id="77" type="normal">
-      <Line destination="78" portrait="Hifumi Yamada" mood="sad">But I didn't eat the noodles form Fujisaki I swear it!</Line>
-    </Dialogue> 
-  
-    <Dialogue id="78" type="normal">
-      <Line destination="79" portrait="Kyoko Kirigiri" mood="thinking">So, what did you eat then?</Line>
-    </Dialogue> 
-  
-    <Dialogue id="79" type="normal">
-      <Line destination="80" portrait="Hifumi Yamada" mood="proud">Just potato chi-UGHHH I mean healthy snack! Like carrots and cherry tomato's.</Line>
-    </Dialogue> 
-  
-    <Dialogue id="80" type="normal">
-      <Line destination="81" portrait="Kyoko Kirigiri" mood="neutral">Right...</Line>
-    </Dialogue> 
-  
-    <Dialogue id="81" type="normal">
-      <Line destination="82" portrait="Chihiro Fujisaki" mood="proud">What do you think Naegi?</Line>
-    </Dialogue> 
-  
-    <Dialogue id="82" type="question">
-      <Line portrait="Makoto Naegi" mood="thinking">*Hhhhmmm*</Line>
-      <Options>
-        <Option destination="71" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Yamada">Yamada, what where you doing after Fujisaki left?</Option>
-        <Option destination="0" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Kirigiri">Kirigi, what where you doing after Fujisaki left?</Option>
-        <Option destination="0" type="normal" portrait="Makoto Naegi" mood="questioning" choice="Togami">Togami, what where you doing after Fujisaki left?</Option>
-      </Options>
-    </Dialogue> 
-    
+      <Line destination="0" portrait="Monokuma" mood="laughing">Thanks for playing!</Line>
+    </Dialogue>
   </DanganronpaDialogue>
 </DialogueCollection>
